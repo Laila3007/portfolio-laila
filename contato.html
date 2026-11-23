@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="/styles/contato.css">
 </head>
 <body>
-    <!-- Cabeçalho com o nome e o menu de navegação entre as páginas -->
     <header>
         <a href="/index.html">
 
         </a>
 
-        <!-- Menu principal de navegação -->
         <nav class="menu">
             <ul>
                 <li>
@@ -31,28 +29,21 @@
         </nav>
     </header>
 
-    <!-- Conteúdo principal da página de contato -->
     <main>
-        <!-- Cartão centralizado com o formulário de contato -->
         <section class="bloco-contato">
             <h1>Entre em Contato</h1>
             <p>Preencha os dados abaixo para enviar uma mensagem.</p>
 
-            <!-- Formulário semântico sem uso de div -->
             <form class="formulario-contato" action="#" method="post">
-                <!-- Campo para o nome completo -->
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
-                <!-- Campo para o e-mail -->
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
 
-                <!-- Campo para o telefone -->
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(88) 99999-9999">
 
-                <!-- Grupo de seleção única (radio) para o gênero, igual visto na aula -->
                 <fieldset class="grupo-genero">
                     <legend>Gênero:</legend>
 
@@ -64,17 +55,14 @@
 
                 </fieldset>
 
-                <!-- Caixa de texto maior para a mensagem -->
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
 
-                <!-- Botão de envio do formulário -->
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
 
-    <!-- Rodapé padrão do portfólio -->
     <footer>
         <p>&copy; 2026 Laila Sousa. Todos os direitos reservados.</p>
     </footer>
