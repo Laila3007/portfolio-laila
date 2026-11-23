@@ -1,0 +1,134 @@
+/* Reset básico: zera margens e preenchimentos padrão do navegador e faz padding/borda entrarem no cálculo de largura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo principal branco e cor de texto padrão em roxo escuro (#2f2431) para boa leitura */
+body {
+    background-color: #ffffff;
+    color: #2f2431;
+}
+
+/* Cabeçalho e rodapé com fundo roxo escuro (#2f2431) e texto branco para contraste */
+header {
+    background-color: #2f2431;
+    color: #ffffff;
+    height: 60px;    
+    text-align: center;
+}
+
+/* Estilo do link principal no cabeçalho */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Remove as bolinhas da lista e alinha os links do menu horizontalmente */
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Links do menu com borda roxa vibrante (#803975) e cantos arredondados */
+nav.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: 1px solid #803975;
+    border-radius: 6px;
+}
+
+/* Destaque ao passar o mouse sobre os links do menu */
+nav.menu a:hover {
+    background-color: #803975;
+}
+
+/* Área principal do conteúdo centralizada com largura controlada */
+main {
+    width: 90%;
+    max-width: 720px;
+    margin: 28px auto 90px auto; /* Centraliza horizontalmente e dá espaço antes do rodapé */
+}
+
+/* Artigo principal com fundo branco, borda roxa vibrante (#803975) e espaçamento interno */
+article.apresentacao-hero {
+    background-color: #ffffff;
+    border: 2px solid #803975;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Seção da tabela com fundo bem clarinho puxando para o roxo e borda em #803975 */
+section.secao-tecnologias {
+    background-color: #faf7fa;
+    border: 1px solid #803975;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Títulos em roxo vibrante (#803975) e centralizados */
+h2, h3 {
+    color: #803975;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Espaçamento entre linhas e parágrafos para facilitar a leitura */
+p {
+    line-height: 1.55;
+    margin-bottom: 12px;
+}
+
+/* Tabela ocupa 100% da largura da seção e junta as bordas das células */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Cabeçalho da tabela (th) em roxo escuro com texto branco e borda roxa vibrante */
+th {
+    background-color: #2f2431;
+    color: #ffffff;
+    border: 1px solid #803975;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Células de dados (td) com fundo branco, texto escuro e borda roxa vibrante */
+td {
+    background-color: #ffffff;
+    color: #2f2431;
+    border: 1px solid #803975;
+    padding: 10px;
+}
+
+/* Rodapé ocupando a tela inteira na horizontal, mais baixo e com altura fina */
+footer {
+    background-color: #2f2431; /* Roxo escuro da identidade visual */
+    color: #ffffff; /* Texto branco para contraste */
+    width: 100%; /* Ocupa de um lado ao outro da tela */
+    margin: 80px auto 0 auto; /* Afasta o rodapé da tabela para não ficar colado */
+    padding: 18px 24px; /* Altura fininha e discreta */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Garante que o texto do rodapé fique centralizado, fininho e sem espaço extra */
+footer p {
+    color: #ffffff;
+    font-size: 18px; /* Aumento do tamanho da letra no rodapé */
+    margin-bottom: 0;
+    line-height: 1.3;
+}

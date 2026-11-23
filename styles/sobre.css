@@ -1,0 +1,170 @@
+/* Cabeçalho e rodapé com fundo roxo escuro (#2f2431) e texto branco para contraste */
+header {
+    background-color: #2f2431;
+    color: #ffffff;
+    height: 60px;    
+    text-align: center;
+}
+
+/* Estilo do link principal no cabeçalho */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Remove as bolinhas da lista e alinha os links do menu horizontalmente */
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+/* Links do menu com borda roxa vibrante (#803975) e cantos arredondados */
+nav.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: 1px solid #803975;
+    border-radius: 6px;
+}
+
+/* Destaque ao passar o mouse sobre os links do menu */
+nav.menu a:hover {
+    background-color: #803975;
+}
+
+/* Garante que a página ocupe pelo menos a altura da tela e empurre o rodapé para o final */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mantém o conteúdo principal ocupando o espaço do meio */
+main,
+.conteudo-sobre {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Contêiner expandido para empurrar a imagem mais para a direita */
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    margin: 36px 48px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* Cartão contendo apenas o texto */
+.bloco-sobre-foto {
+    flex: 1;
+    max-width: 580px;
+    background-color: #ffffff;
+    border: 2px solid #26336b;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.texto-resumido {
+    width: 100%;
+}
+
+/* Título "Sobre mim" */
+.texto-resumido h1 {
+    font-size: 2.0rem;
+    color: #2f2431;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+/* Parágrafos com tamanho maior e leitura mais confortável */
+.texto-resumido p {
+    font-size: 1.20rem;
+    line-height: 1.7;
+    margin-top: 14px;
+    margin-bottom: 0;
+    color: #2d2d2d;
+}
+
+/* Foto posicionada fora da caixa, bem mais à direita e maior */
+.foto-lateral {
+    margin: 0 0 0 auto;
+    flex-shrink: 0;
+}
+
+.foto-lateral img {
+    width: 340px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #803975;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+/* Rodapé fixado na base da página */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #2f2431;
+    color: #ffffff;
+    padding: 18px 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Ajuste em telas menores: empilha a foto abaixo da caixa */
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column;
+        margin: 20px 16px;
+        gap: 24px;
+    }
+
+    .bloco-sobre-foto {
+        max-width: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .texto-resumido h1 {
+        font-size: 1.5rem;
+    }
+
+    .texto-resumido p {
+        font-size: 1rem;
+    }
+
+    .foto-lateral {
+        margin: 0 auto;
+    }
+
+    .foto-lateral img {
+        width: 260px;
+        height: 310px;
+    }
+}
